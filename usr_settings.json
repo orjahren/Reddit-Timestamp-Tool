@@ -1,0 +1,8 @@
+{
+	"settings": {
+		"year": false
+		"day": true
+		"hour": true
+		"minutes": true
+	}
+}
