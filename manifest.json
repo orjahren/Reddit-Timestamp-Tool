@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Reddit Update Timestamp",
+    "description": "This extension will add a timestamp saying when you last updated a reddit post",
+    "version": "0.2",
+  
+    "browser_action": {
+        "default_popup": "RTS.html"
+    },
+
+    "permissions": [
+        "http://old.reddit.com/*comments/*",
+        "https://old.reddit.com/*comments/*",
+        "http://reddit.com/*comments/*",
+        "https://reddit.com/*comments/*"
+     ],
+
+     "content_scripts": [
+        {
+          "matches": [
+            "http://old.reddit.com/*comments/*",
+            "https://old.reddit.com/*comments/*",
+            "http://reddit.com/*comments/*",
+            "https://reddit.com/*comments/*"
+
+          ],
+          "js": ["content.js"]
+        }
+      ]
+  }
